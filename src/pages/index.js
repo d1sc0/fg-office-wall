@@ -8,8 +8,20 @@ const IndexPage = ({ data }) => {
   const allProfileData = data.allAirtable.edges
   const placeholderData = data.placeholder
   return (
-    <Layout profiles={allProfileData}>
+    <Layout>
       <SEO title="Home" />
+      <article>
+        {/* <Image fluid={cardImage} className="cardImage" alt={profile.name} /> */}
+        <div className="information">
+          <p className="name">Search</p>
+          <input
+            type="text"
+            aria-label="Search"
+            placeholder="Type to filter posts..."
+            // onChange={handleInputChange}
+          />
+        </div>
+      </article>
       {allProfileData.map(({ node }) => {
         return (
           <ProfileCard
