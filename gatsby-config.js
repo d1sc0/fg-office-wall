@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `FG People Wall`,
-    description: `A quick and dirty mashup between airtable and gatsby to try and re-create our office wall of people.`,
+    description: `A quick mashup between airtable and gatsby to try and re-create our office wall of people and their fun facts.`,
     author: `@_disco`,
   },
   plugins: [
