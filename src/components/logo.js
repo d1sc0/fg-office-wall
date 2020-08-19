@@ -13,7 +13,7 @@ import Image from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Logo = () => {
+const Logo = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       headerImage: file(relativePath: { eq: "fg_logo_wall.png" }) {
@@ -30,6 +30,7 @@ const Logo = () => {
     <Image
       fixed={data.headerImage.childImageSharp.fixed}
       className="pagelogo"
+      alt={siteTitle}
       imgStyle={{
         objectFit: "none",
         objectPosition: "50% 50%",

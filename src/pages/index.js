@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
   const allProfileData = data.allAirtable.edges
   const placeholderData = data.placeholder
   return (
-    <Layout>
+    <Layout profiles={allProfileData}>
       <SEO title="Home" />
       {allProfileData.map(({ node }) => {
         return (
