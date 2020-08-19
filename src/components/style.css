@@ -15,10 +15,6 @@ body {
 }
 
 .search {
-  background-color: #e53094;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* height: 120px; */
 }
 .pagelogo {
   display: block !important;
@@ -48,7 +44,8 @@ body {
   width: 100%;
 }
 
-.information {
+.information,
+.controls {
   margin: 0px 20px 0px 20px;
 }
 .name {
