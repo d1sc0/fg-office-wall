@@ -49,7 +49,7 @@ export const data = graphql`
         }
       }
     }
-    placeholder: file(relativePath: { eq: "default-mugshot.jpg" }) {
+    placeholder: file(relativePath: { eq: "default-mugshot.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
