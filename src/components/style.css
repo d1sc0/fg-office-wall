@@ -14,15 +14,19 @@ body {
   /* height: 100px; */
 }
 
-.search {
-}
 .pagelogo {
   display: block !important;
   padding-top: 10px !important;
   margin: 0 auto !important;
   object-fit: none !important;
 }
-
+.controls {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  align-items: center;
+}
 .grid {
   display: grid;
   max-width: 1200px;
@@ -40,12 +44,12 @@ body {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
 .grid > article img {
   width: 100%;
 }
 
-.information,
-.controls {
+.information {
   margin: 0px 20px 0px 20px;
 }
 .name {
@@ -62,4 +66,17 @@ body {
 .fact {
   font-size: 0.8rem;
   margin: 0px 0px 15px 0px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
 }

@@ -40,27 +40,25 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <article>
-        {/* <Image fluid={cardImage} className="cardImage" alt={profile.name} /> */}
-        <div className="controls">
-          <p className="search">Search</p>
-          <input
-            type="text"
-            aria-label="Search"
-            placeholder="Type to filter posts..."
-            onChange={handleInputChange}
-          />
-        </div>
-      </article>
-      {allProfiles.map(({ node }) => {
-        return (
-          <ProfileCard
-            key={node.id}
-            profile={node.data}
-            placeholder={placeholderData}
-          />
-        )
-      })}
+      <div className="controls">
+        <input
+          type="text"
+          aria-label="Search"
+          placeholder="Start typing name or role title here to filter"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="grid">
+        {allProfiles.map(({ node }) => {
+          return (
+            <ProfileCard
+              key={node.id}
+              profile={node.data}
+              placeholder={placeholderData}
+            />
+          )
+        })}
+      </div>
     </Layout>
   )
 }
